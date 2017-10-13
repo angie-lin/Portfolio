@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen and (max-width:1400px)" href="css/medium.css" type="text/css" />
+<link rel="stylesheet" media="screen and (min-width:1400px)" href="css/large.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+   $("#description").fadeIn(1000);
+   $("#description h1").animate({left:'60px'},"slow");
+   $("#transition h2").fadeIn(1000);
+   $(".line").animate({height:'40px'},"slow");
+
+
+	
+});
+</script>
+<title>ANGIE LIN</title>
+</head>
+
+<body>
+<header>
+ <div class="container">
+  <div id="branding">
+   <h1>ANGIE LIN</h1>
+  </div> 
+  <nav>
+   <ul>
+    <li><a href="index.html">projects</a></li>
+    <li><a href="about.html">about</a></li>
+   </ul>
+  </nav>
+ </div>
+</header> 
+<section id="intro">
+ <div class="container" >
+  <div id="myname"> </div>
+  <div id="description">
+   <h1>Hi there,<br> I’m a multi-disciplinary designer based in Beijing.<br>
+I currently produce creative social content with typography, photo manipulation and motion graphic. </h1>
+   <p>design and code by Angie Lin, 2017</p> 
+  </div>
+ </div>
+ <div id="myphoto"></div>
+ 
+ 
+</section>
+<script type="text/javascript">
+<!--
+//作者：凌陈亮www.lingchenliang.com（QQ：57404811）
+autodivheight();
+function autodivheight(){ //函数：获取尺寸
+    //获取浏览器窗口高度
+    var winHeight=0;
+    if (window.innerHeight)
+        winHeight = window.innerHeight;
+    else if ((document.body) && (document.body.clientHeight))
+        winHeight = document.body.clientHeight;
+    //通过深入Document内部对body进行检测，获取浏览器窗口高度
+    if (document.documentElement && document.documentElement.clientHeight)
+        winHeight = document.documentElement.clientHeight;
+    //DIV高度为浏览器窗口的高度
+    //document.getElementById("test").style.height= winHeight +"px";
+	document.getElementById("intro").style.height= winHeight-80+"px";
+	document.getElementById("myphoto").style.height= winHeight-10+"px";
+	document.getElementById("myname").style.height= winHeight-30+"px";
+	document.getElementById("description").style.height= winHeight-70+"px";
+}
+window.onresize=autodivheight; //浏览器窗口发生变化时同时变化DIV高度
+//-->
+</script>
+<section id="projects">
+ <div id="transition">
+  <div class="container">
+   <div class="line"></div>
+   <h2>here's what i've been doing</h2>
+  </div> 
+  </div>
+
+ <div id="contents">
+  <div class="container">  
+  <div class="odd">
+  <table>
+   <tbody>
+    <tr><th>.01</th></tr>
+    <tr><td>2016 - 2017 <br>posters collection</td>
+    </tr>
+   </tbody>
+  </table>
+  <a href="project01.html">
+   <div class="cover">
+    <div class="color"></div>
+    <div class="bgimg" style="background-image:url(img/cover01.jpg); "></div>
+   </div>
+  </a>
+  </div>
+  
+  <div class="even">
+   <table>
+   <tbody>
+   <tr><th>.02</th></tr>
+   <tr><td>Intel x <br>2017 Spring Festival Gala</td>
+   </tr>
+  </tbody>
+  </table>
+  <a href="project02.html">
+  <div class="cover">
+   <div class="color"></div>
+   <div class="bgimg" style="background-image:url(img/cover02.jpg); "></div>
+  </div>
+  </a>
+  </div>
+  
+   <div class="odd">
+  <table>
+   <tbody>
+    <tr><th>.03</th></tr>
+    <tr><td>2016 - 2017 <br>motion graphics</td>
+    </tr>
+   </tbody>
+  </table>
+  <a href="project03.html">
+   <div class="cover">
+    <div class="color"></div>
+    <div class="bgimg" style="background-image:url(img/cover03.jpg); "></div>
+   </div>
+  </a>
+  </div>
+  
+  <div class="even">
+   <table>
+   <tbody>
+   <tr><th>.04</th></tr>
+   <tr><td>mobile html5&ui <br>programs</td>
+   </tr>
+  </tbody>
+  </table>
+  <a href="project04.html">
+  <div class="cover">
+   <div class="color"></div>
+   <div class="bgimg" style="background-image:url(img/cover04.jpg); "></div>
+  </div>
+  </a>
+  </div>
+  
+   <div class="odd">
+  <table>
+   <tbody>
+    <tr><th>.05</th></tr>
+    <tr><td>editorial design <br>collection</td>
+    </tr>
+   </tbody>
+  </table>
+  <a href="project05.html">
+   <div class="cover">
+    <div class="color"></div>
+    <div class="bgimg" style="background-image:url(img/cover05.jpg); "></div>
+   </div>
+  </a>
+  </div>
+
+ 
+ </div>
+ <div id="copyright">
+  <div class="container">
+  <hr>
+  <p>© 2017 Angie Lin All rights reserved</p></div>
+ </div>  
+
+ </div>
+</section>
+
+</body>
+</html>
